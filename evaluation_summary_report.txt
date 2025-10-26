@@ -1,0 +1,17 @@
+SUMMARY EVALUATION REPORT (LENIENT MODE ON)
+Generated: 2025-10-26T05:52:04.137015Z
+
+Ref type: highlights_pseudo_ref
+Summary words: 132  Article words: 332
+Compression ratio: 0.3976  Unique-token ratio: 0.8864
+
+ROUGE (F1 %):
+  ROUGE-1: 100.0  ROUGE-2: 0.0  ROUGE-L: 100.0
+
+Highlights (fuzzy):
+  Count: 5  Hits: 5  Coverage: 1.0  AvgOverlap: 0.7123
+
+Title overlap (0..1): 0.25
+Entity matches: ['ప్రపంచ కప్', 'ఆస్ట్రేలియా మహిళా జట్టు', 'భారత్', 'ఇందౌర్', 'అకీల్ ఖాన్', 'బీసీసీఐ', 'సునీల్ గావస్కర్', 'బంగ్లాదేశ్', 'స్మృతి మంధాన']  Precision: 0.0682  Recall: 0.9
+
+⭐ OVERALL SUMMARY QUALITY SCORE (0-100): 78.73

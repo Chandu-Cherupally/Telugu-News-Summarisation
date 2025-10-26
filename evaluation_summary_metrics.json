@@ -1,0 +1,29 @@
+{
+  "summary_word_count": 132,
+  "article_word_count": 332,
+  "compression_ratio": 0.3976,
+  "redundancy_unique_token_ratio": 0.8864,
+  "rouge1_f": 100.0,
+  "rouge2_f": 0.0,
+  "rougeL_f": 100.0,
+  "ref_type": "highlights_pseudo_ref",
+  "highlights_count": 5,
+  "highlights_in_summary": 5,
+  "highlights_coverage": 1.0,
+  "highlights_avg_overlap": 0.7123,
+  "title_overlap": 0.25,
+  "entity_matches": [
+    "ప్రపంచ కప్",
+    "ఆస్ట్రేలియా మహిళా జట్టు",
+    "భారత్",
+    "ఇందౌర్",
+    "అకీల్ ఖాన్",
+    "బీసీసీఐ",
+    "సునీల్ గావస్కర్",
+    "బంగ్లాదేశ్",
+    "స్మృతి మంధాన"
+  ],
+  "entity_precision": 0.0682,
+  "entity_recall": 0.9,
+  "overall_score": 78.73
+}
