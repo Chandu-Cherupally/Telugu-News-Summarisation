@@ -1,0 +1,18 @@
+METADATA:
+url: https://www.eenadu.net/telugu-news/sports/gavaskar-fumes-after-australian-women-cricketers-touched-inappropriately/0401/125196320
+title: Sunil Gavaskar: అతిథి దేవోభవకు మారుపేరు భారత్‌.. ఆ దోషికి కఠిన శిక్ష పడాల్సిందే: గావస్కర్ | gavaskar-fumes-after-australian-women-cricketers-touched-inappropriately
+authors: 
+publish_date: 
+
+EXTRACTED ENTITIES:
+ENTITIES:
+- ప్రపంచ కప్
+- ఆస్ట్రేలియా మహిళా జట్టు
+- భారత్
+- ఇందౌర్
+- దక్షిణాఫ్రికా
+- అకీల్ ఖాన్
+- బీసీసీఐ
+- సునీల్ గావస్కర్
+- బంగ్లాదేశ్
+- స్మృతి మంధాన
