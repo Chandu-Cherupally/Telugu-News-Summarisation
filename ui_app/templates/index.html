@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Telugu News Summarizer</title>
+  <style>
+    /* ---------- Theme Variables ---------- */
+    :root {
+      --bg: #0e1117;
+      --card-bg: #161b22;
+      --text: #e6edf3;
+      --subtext: #8b949e;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --border: #30363d;
+      --radius: 14px;
+      --mono: "Fira Code", monospace;
+      --sans: "Inter", "Segoe UI", sans-serif;
+    }
+
+    /* ---------- Base Layout ---------- */
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* ---------- Container ---------- */
+    .container {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 50px 60px;
+      width: 100%;
+      max-width: 650px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 0.7s ease;
+      transition: 0.3s ease;
+    }
+
+    .container:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+    }
+
+    /* ---------- Headings ---------- */
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, var(--accent), #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p.sub {
+      color: var(--subtext);
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+
+    /* ---------- Form Elements ---------- */
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    label {
+      font-weight: 500;
+      font-size: 0.95rem;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      background: #0c0f14;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      padding: 12px;
+      margin-bottom: 18px;
+      color: var(--text);
+      font-size: 0.95rem;
+      transition: 0.25s ease;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 10px rgba(59, 130, 246, 0.25);
+    }
+
+    select {
+      cursor: pointer;
+    }
+
+    /* ---------- Button ---------- */
+    button {
+      background: linear-gradient(90deg, var(--accent), var(--accent-hover));
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(96, 165, 250, 0.4);
+    }
+
+    /* ---------- Animations ---------- */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ---------- Scrollbar ---------- */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #374151;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .container {
+        padding: 40px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📰 Telugu News Summarizer</h2>
+    <p class="sub">Generate AI-powered concise summaries for Telugu news articles.</p>
+
+    <form method="POST" action="/summarize">
+      <label>News Article URL:</label>
+      <input type="text" name="url" placeholder="Enter Telugu news URL" required />
+
+      <label>Summary Length:</label>
+      <select name="choice">
+        <option value="1">Very Short (1–2 sentences)</option>
+        <option value="2">Short (3–4 sentences)</option>
+        <option value="3" selected>Long (7–10 sentences)</option>
+        <option value="4">Custom (below)</option>
+      </select>
+
+      <label>Custom Sentence Count:</label>
+      <input type="number" name="custom_n" min="1" max="15" value="5" />
+
+      <button type="submit">✨ Summarize</button>
+    </form>
+  </div>
+</body>
+</html>
