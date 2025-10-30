@@ -53,8 +53,8 @@ pip install requests beautifulsoup4 nltk scikit-learn newspaper3k readability-lx
 export GOOGLE_API_KEY="YOUR_KEY_HERE"
 
 ▶️ 4. Run the Script
-python summariser.py
-
+python summariser.py (IN TERMINAL)
+python app.py (In /ui_app directory - FOR UI)
 🧩 How It Works (Step-by-Step)
 
 📰 Article Fetching
